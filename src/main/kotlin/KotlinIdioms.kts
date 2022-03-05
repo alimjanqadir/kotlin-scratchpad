@@ -14,3 +14,11 @@ val map = mapOf(1 to 'a', 2 to 'b')
 for((k, v) in map)
 	println("$k, $v")
 
+
+for(i in 0..100) print("$i ") // closed ranged  include 100
+println()
+
+for(i in 0 until 100) print("$i ") // half closed ranges not include 100
+println()
+
+ 
