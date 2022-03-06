@@ -10,15 +10,19 @@ println(positives)
 
 if(-1 in list) println("yes")
 
-val map = mapOf(1 to 'a', 2 to 'b')
-for((k, v) in map)
-	println("$k, $v")
+//val map = mapOf(1 to 'a', 2 to 'b')
+//for((k, v) in map)
+//	println("$k, $v")
+//
+//
+//for(i in 0..100) print("$i ") // closed ranged  include 100
+//println()
+//
+//for(i in 0 until 100) print("$i ") // half closed ranges not include 100
+//println()
 
+for(i in 0..10 step 2) print("$i ") 
+print("\n")
 
-for(i in 0..100) print("$i ") // closed ranged  include 100
-println()
-
-for(i in 0 until 100) print("$i ") // half closed ranges not include 100
-println()
-
- 
+for(i in 10 downTo 0) print("$i ")
+print("\n")
