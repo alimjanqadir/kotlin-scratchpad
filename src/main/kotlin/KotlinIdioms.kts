@@ -21,8 +21,13 @@ if(-1 in list) println("yes")
 //for(i in 0 until 100) print("$i ") // half closed ranges not include 100
 //println()
 
-for(i in 0..10 step 2) print("$i ") 
-print("\n")
+//for(i in 0..10 step 2) print("$i ") 
+//print("\n")
+//
+//for(i in 10 downTo 0) print("$i ")
+//print("\n")
 
-for(i in 10 downTo 0) print("$i ")
-print("\n")
+object Singleton {
+	val myVal = 1
+}
+print("myVal: ${Singleton.myVal}")
