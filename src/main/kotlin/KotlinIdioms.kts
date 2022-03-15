@@ -30,4 +30,18 @@ if(-1 in list) println("yes")
 object Singleton {
 	val myVal = 1
 }
-print("myVal: ${Singleton.myVal}")
+println("myVal: ${Singleton.myVal}")
+
+// Instantiate abstract class
+abstract class Animal {
+	abstract fun  move()
+	abstract fun eat()
+}
+
+val animal = object: Animal() {
+	override fun move() = println("Moving")
+	override fun eat() = println("Eating")
+}
+
+animal.move()
+animal.eat()
