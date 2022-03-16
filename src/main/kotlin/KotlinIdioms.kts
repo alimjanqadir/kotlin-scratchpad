@@ -1,3 +1,4 @@
+import java.io.File
 // create data objects
 
 data class Rect(val width: Int, val height: Int)
@@ -45,3 +46,9 @@ val animal = object: Animal() {
 
 animal.move()
 animal.eat()
+
+// if not null shorthand
+val files = File(".").listFiles()
+println(files?.size)
+
+
