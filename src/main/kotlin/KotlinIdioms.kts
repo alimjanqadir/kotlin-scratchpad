@@ -51,4 +51,10 @@ animal.eat()
 val files = File(".").listFiles()
 println(files?.size)
 
+var nullable: String? = null
+println(nullable?.uppercase() ?: "null");
+nullable = "test"
+println(nullable?.uppercase() ?: "null");
+
+
 
