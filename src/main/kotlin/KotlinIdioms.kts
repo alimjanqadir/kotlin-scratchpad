@@ -56,5 +56,9 @@ println(nullable?.uppercase() ?: "null");
 nullable = "test"
 println(nullable?.uppercase() ?: "null");
 
+var fruits = listOf("Apple", "Pear", "Banana")
+println(fruits.firstOrNull());
 
+fruits = listOf();
+println(fruits.firstOrNull());
 
