@@ -62,3 +62,8 @@ println(fruits.firstOrNull());
 fruits = listOf();
 println(fruits.firstOrNull());
 
+// Execute if not null
+var z: List<Int>? = listOf(0, 1, 2, 3, 4) 
+z?.let {
+	it.filter { n -> n % 2 == 0}
+}
