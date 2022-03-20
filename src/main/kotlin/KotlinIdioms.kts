@@ -67,3 +67,9 @@ var z: List<Int>? = listOf(0, 1, 2, 3, 4)
 z?.let {
 	it.filter { n -> n % 2 == 0}
 }
+
+// Map nullable value if not null
+fun transform(): Int? = null;
+var numbers: List<Int>? = listOf(1, 3, 5, 7)
+val evenNumber = numbers?.let { transform() } ?: 2
+println("even: $evenNumber");
