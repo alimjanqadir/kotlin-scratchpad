@@ -73,3 +73,12 @@ fun transform(): Int? = null;
 var numbers: List<Int>? = listOf(1, 3, 5, 7)
 val evenNumber = numbers?.let { transform() } ?: 2
 println("even: $evenNumber");
+
+
+// Return on when statement
+fun reply(args: String) =  when(args) {
+	"a" -> "b"
+	else -> "c"
+}
+
+println(reply("b"));
