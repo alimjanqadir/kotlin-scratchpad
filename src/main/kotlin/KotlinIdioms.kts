@@ -80,5 +80,13 @@ fun reply(args: String) =  when(args) {
 	"a" -> "b"
 	else -> "c"
 }
+println(reply("b"))
 
-println(reply("b"));
+val trycatch = try {
+	1 / 0
+} catch(e: ArithmeticException) {
+	throw IllegalArgumentException()
+}
+println(trycatch);
+
+
