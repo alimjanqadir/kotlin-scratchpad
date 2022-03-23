@@ -83,10 +83,22 @@ fun reply(args: String) =  when(args) {
 println(reply("b"))
 
 val trycatch = try {
-	1 / 0
+	1 / 1
 } catch(e: ArithmeticException) {
-	throw IllegalArgumentException()
+	e.printStackTrace()
 }
 println(trycatch);
 
+// Call multiple methods on an object instance
+class Person {
+	fun walk(){}
+	fun eat(){}
+	fun sleep(){}
+}
 
+val person = Person()
+with(person) {
+	walk()
+	eat()
+	sleep()
+}
