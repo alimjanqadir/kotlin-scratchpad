@@ -95,15 +95,19 @@ println(files?.size)
 //println(trycatch);
 
 // Call multiple methods on an object instance
-class Person {
-	fun walk(){}
-	fun eat(){}
-	fun sleep(){}
-}
+//class Person {
+//	fun walk(){}
+//	fun eat(){}
+//	fun sleep(){}
+//}
+//val person = Person()
+//with(person) {
+//	walk()
+//	eat()
+//	sleep()
+//}
 
-val person = Person()
-with(person) {
-	walk()
-	eat()
-	sleep()
-}
+// Builder style usage of methods that return unit
+fun arrayOfMinusOnes(size: Int): IntArray = IntArray(size).apply{fill(-1)}
+arrayOfMinusOnes(10).forEach{ print(it) }
+println();
