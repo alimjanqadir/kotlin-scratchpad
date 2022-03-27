@@ -108,6 +108,20 @@ println(files?.size)
 //}
 
 // Builder style usage of methods that return unit
-fun arrayOfMinusOnes(size: Int): IntArray = IntArray(size).apply{fill(-1)}
-arrayOfMinusOnes(10).forEach{ print(it) }
-println();
+//fun arrayOfMinusOnes(size: Int): IntArray = IntArray(size).apply{fill(-1)}
+//arrayOfMinusOnes(10).forEach{ print(it) }
+//println();
+
+// Configure properties of an object (apply)
+class Car() {
+	var color: Int? = null
+	var brand: String? = null
+	override fun toString() = "$color and $brand"
+}
+val car = Car().apply {
+	color = 0;
+	brand = "demo"
+}
+println(car);
+
+
