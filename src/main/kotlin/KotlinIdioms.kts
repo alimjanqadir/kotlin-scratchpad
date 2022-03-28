@@ -1,4 +1,6 @@
 import java.io.File
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 // Create DTOs (POJOs/POCOs)
 //data class Rect(val width: Int, val height: Int)
@@ -113,15 +115,17 @@ println(files?.size)
 //println();
 
 // Configure properties of an object (apply)
-class Car() {
-	var color: Int? = null
-	var brand: String? = null
-	override fun toString() = "$color and $brand"
-}
-val car = Car().apply {
-	color = 0;
-	brand = "demo"
-}
-println(car);
+//class Car() {
+//	var color: Int? = null
+//	var brand: String? = null
+//	override fun toString() = "$color and $brand"
+//}
+//val car = Car().apply {
+//	color = 0;
+//	brand = "demo"
+//}
+//println(car);
 
-
+// Java 7's try with resources
+val stream = Files.newInputStream(Paths.get("KotlinIdioms.kts"))
+stream.buffered().reader().use { reader -> println(reader.readText())}
