@@ -127,5 +127,15 @@ println(files?.size)
 //println(car);
 
 // Java 7's try with resources
-val stream = Files.newInputStream(Paths.get("KotlinIdioms.kts"))
-stream.buffered().reader().use { reader -> println(reader.readText())}
+//val stream = Files.newInputStream(Paths.get("KotlinIdioms.kts"))
+//stream.buffered().reader().use { reader -> println(reader.readText())}
+
+// Nullable boolean
+var bool: Boolean? = null
+if(bool == true) {
+	println("Condition true")
+} else {
+	println("Condition false")
+}
+
+
