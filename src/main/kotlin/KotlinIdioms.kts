@@ -131,11 +131,18 @@ println(files?.size)
 //stream.buffered().reader().use { reader -> println(reader.readText())}
 
 // Nullable boolean
-var bool: Boolean? = null
-if(bool == true) {
-	println("Condition true")
-} else {
-	println("Condition false")
-}
+//var bool: Boolean? = null
+//if(bool == true) {
+//	println("Condition true")
+//} else {
+//	println("Condition false")
+//}
+
+// Swap two variables
+var a = 1;
+var b = 2;
+a = b.also {b = a}
+println("a: $a")
+println("b: $b")
 
 
