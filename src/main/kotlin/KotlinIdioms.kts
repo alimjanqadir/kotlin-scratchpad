@@ -52,8 +52,8 @@ import java.nio.file.Paths;
 //animal.eat()
 
 // If not null shorthand
-val files = File(".").listFiles()
-println(files?.size)
+//val files = File(".").listFiles()
+//println(files?.size)
 
 // If not null else shorthand
 //var nullable: String? = null
