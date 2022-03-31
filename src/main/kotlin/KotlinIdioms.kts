@@ -139,10 +139,21 @@ println(files?.size)
 //}
 
 // Swap two variables
-var a = 1;
-var b = 2;
-a = b.also {b = a}
-println("a: $a")
-println("b: $b")
+//var a = 1;
+//var b = 2;
+//a = b.also {b = a}
+//println("a: $a")
+//println("b: $b")
+
+// Build string
+val multiLineText = buildString {
+	appendLine("First line")
+	appendLine("Second line")
+	appendLine("Third line")
+	appendLine("Fourth line")
+}
+
+println(multiLineText);
+
 
 
