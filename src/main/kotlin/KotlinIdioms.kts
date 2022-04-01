@@ -146,14 +146,19 @@ import java.nio.file.Paths;
 //println("b: $b")
 
 // Build string
-val multiLineText = buildString {
-	appendLine("First line")
-	appendLine("Second line")
-	appendLine("Third line")
-	appendLine("Fourth line")
-}
+//val multiLineText = buildString {
+//	appendLine("First line")
+//	appendLine("Second line")
+//	appendLine("Third line")
+//	appendLine("Fourth line")
+//}
+//println(multiLineText);
 
-println(multiLineText);
-
+// Build string from collection items
+val numbers = mutableListOf(1, 2, 3, 4, 5)
+val oddNumbers = numbers
+					.filter { it % 2 == 0}
+					.joinToString()
+println(oddNumbers)
 
 
