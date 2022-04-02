@@ -155,10 +155,17 @@ import java.nio.file.Paths;
 //println(multiLineText);
 
 // Build string from collection items
-val numbers = mutableListOf(1, 2, 3, 4, 5)
-val oddNumbers = numbers
-					.filter { it % 2 == 0}
-					.joinToString()
-println(oddNumbers)
+//val numbers = mutableListOf(1, 2, 3, 4, 5)
+//val oddNumbers = numbers
+//					.filter { it % 2 == 0}
+//					.joinToString()
+//println(oddNumbers)
+
+// Provide default value if string is blank
+fun fruit() = "" 
+var apple = fruit().ifBlank{"Apple"}
+println(apple)
+
+
 
 
