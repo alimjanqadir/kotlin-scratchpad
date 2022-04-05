@@ -162,10 +162,14 @@ import java.nio.file.Paths;
 //println(oddNumbers)
 
 // Provide default value if string is blank
-fun fruit() = "" 
-var apple = fruit().ifBlank{"Apple"}
-println(apple)
+//fun fruit() = "" 
+//var apple = fruit().ifBlank{"Apple"}
+//println(apple)
 
+// Remove characters from start and end of string
+val rawInput = "**Albert Einestein**"
+val filteredInput = rawInput.removeSurrounding("**");
+println(filteredInput)
 
 
 
