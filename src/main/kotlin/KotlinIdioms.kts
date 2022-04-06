@@ -167,9 +167,15 @@ import java.nio.file.Paths;
 //println(apple)
 
 // Remove characters from start and end of string
-val rawInput = "**Albert Einestein**"
-val filteredInput = rawInput.removeSurrounding("**");
-println(filteredInput)
+//val rawInput = "**Albert Einestein**"
+//val filteredInput = rawInput.removeSurrounding("**");
+//println(filteredInput)
+
+// Replace occurences
+val regex = Regex("""\w*\d+\w*""")
+val input = "text2"
+val result = regex.replace(input, replacement = "exmaple")
+println(result)
 
 
 
