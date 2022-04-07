@@ -172,10 +172,10 @@ import java.nio.file.Paths;
 //println(filteredInput)
 
 // Replace occurences
-val regex = Regex("""\w*\d+\w*""")
-val input = "text2"
-val result = regex.replace(input, replacement = "exmaple")
-println(result)
+//val regex = Regex("""\w*\d+\w*""")
+//val input = "text2"
+//val result = regex.replace(input, replacement = "exmaple")
+//println(result)
 
-
-
+// Split a string
+println("this.is.a.test".split("."))
