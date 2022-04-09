@@ -178,4 +178,8 @@ import java.nio.file.Paths;
 //println(result)
 
 // Split a string
-println("this.is.a.test".split("."))
+//println("this.is.a.test".split("."))
+
+// Take a substring
+println("How old are you? I'm 10".substringAfter("?"));
+println("This is a test, but not just a simple one, an intersting one.".substringAfterLast(","));
