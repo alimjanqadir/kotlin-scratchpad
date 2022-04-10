@@ -181,5 +181,13 @@ import java.nio.file.Paths;
 //println("this.is.a.test".split("."))
 
 // Take a substring
-println("How old are you? I'm 10".substringAfter("?"));
-println("This is a test, but not just a simple one, an intersting one.".substringAfterLast(","));
+//println("How old are you? I'm 10".substringAfter("?"));
+//println("This is a test, but not just a simple one, an intersting one.".substringAfterLast(","));
+
+// Multi line strings
+val multiLine = """
+	kotlin
+	java
+""".trimIndent()
+println(multiLine)
+
